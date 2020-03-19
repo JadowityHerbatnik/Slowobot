@@ -6,7 +6,6 @@ import time
 
 
 
-#browser = webdriver.Firefox()
 lista = []
 
 
@@ -109,7 +108,9 @@ def granapunkty(training, browser):
             print("czekamy", ile, "sekund na gre")
             time.sleep(ile)
 
-def start(training, login, haslo):
-    browser = webdriver.Firefox()
+def start(training, firefox, login, haslo):
+    # browser = webdriver.Firefox()
+    # browser = webdriver.Chrome()
+    browser = webdriver.Firefox() if firefox else webdriver.Chrome()
     wejdzdogry(login, haslo, browser)
     granapunkty(training, browser)
