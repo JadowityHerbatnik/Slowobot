@@ -13,7 +13,7 @@ A simple [słowotok](https://www.slowotok.pl) ~~bot~~ assistant
 
 Put the driver somewhere in your PATH and you're good to go
 
-###Usage
+### Usage:
 
 ```
 optional arguments:
