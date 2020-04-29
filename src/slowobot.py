@@ -68,7 +68,7 @@ def konwertnasek(czas):
 
 
 def startgry(browser):
-    print("startgry()")
+    print("start gry")
     fetch(browser)
     wykonaj = szukacz.konwerstujnaslowa(lista)
     return wykonaj
@@ -109,8 +109,6 @@ def granapunkty(training, browser):
             time.sleep(ile)
 
 def start(training, firefox, login, haslo):
-    # browser = webdriver.Firefox()
-    # browser = webdriver.Chrome()
     browser = webdriver.Firefox() if firefox else webdriver.Chrome()
     wejdzdogry(login, haslo, browser)
     granapunkty(training, browser)

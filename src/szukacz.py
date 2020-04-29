@@ -107,8 +107,6 @@ def usunduplikaty(wynikostateczny):  # usun dupliakty slow
                     porzadekcyframi.append(porzadek[u])
     literami = nauka.cyfrynaslowa(porzadekcyframi, listaliter)
     print("Znalezione w słowniku", literami, "\n\n")
-    #print(tuplenaliste, 'tuplenaliste')
-    #print(porzadekcyframi, 'porzadekcyframi')
     return porzadekcyframi
 
 
